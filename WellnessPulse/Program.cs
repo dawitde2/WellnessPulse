@@ -20,13 +20,24 @@ public class EmotionPrediction
 
 class Program
 {
+
+    private static string GetProjectDirectory()
+    {
+        string projectDirectory = Directory.GetCurrentDirectory();
+        int idx = projectDirectory.IndexOf("bin");
+        if (idx != -1)
+        {
+            projectDirectory = projectDirectory.Substring(0, idx);
+        }
+        return projectDirectory;
+    }
     static void Main(string[] args)
     {
         var mlContext = new MLContext();
-
+        var directory = GetProjectDirectory();
         // Load data
         var data = mlContext.Data.LoadFromTextFile<EmotionData>(
-            path: "C:\\Users\\dawit\\source\\repos\\dawitde2\\WellnessPulse\\WellnessPulse\\emotions.csv", hasHeader: true, separatorChar: ',');
+            path: $"{directory}\\emotions.csv", hasHeader: true, separatorChar: ',');
 
         // Split data
         var splitData = mlContext.Data.TrainTestSplit(data, testFraction: 0.2);

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WellnessPulse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5db36c77a488b5eafe073dedc0bbe1898ea290d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e3796b8351e614895951de7c1bb370959fe3b61")]
 [assembly: System.Reflection.AssemblyProductAttribute("WellnessPulse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WellnessPulse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
